@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     CharacterController characterController;
-    public float MovementSpeed =3;
+    public float MovementSpeed =9;
     public float Gravity = 9.8f;
     private float velocity = 0;
 
@@ -36,14 +36,6 @@ public class PlayerController : MonoBehaviour
         {
             velocity -= Gravity * Time.deltaTime;
             characterController.Move(new Vector3(0, velocity, 0));
-        }
-        if(Input.GetKey(KeyCode.LeftShift))
-        {
-            MovementSpeed = 4f;
-        }
-        else
-        {
-            MovementSpeed = 3f;
         }
         if(Input.GetKey(KeyCode.R))
         {
