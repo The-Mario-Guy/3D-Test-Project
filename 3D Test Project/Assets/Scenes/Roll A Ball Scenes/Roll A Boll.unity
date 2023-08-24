@@ -1293,6 +1293,7 @@ GameObject:
   - component: {fileID: 1927699219}
   - component: {fileID: 1927699221}
   - component: {fileID: 1927699222}
+  - component: {fileID: 1927699223}
   m_Layer: 0
   m_Name: Beach Ball (Player)
   m_TagString: Untagged
@@ -1452,6 +1453,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  rb: {fileID: 0}
+  movementX: 0
+  movementY: 0
+--- !u!114 &1927699223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927699214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5807a7333ea4290449e121eed2f2678b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 9
+  Gravity: 9.8
+  isFading: 0
 --- !u!1 &1954710722
 GameObject:
   m_ObjectHideFlags: 0
