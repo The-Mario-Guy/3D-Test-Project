@@ -241,9 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &572581092
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,9 +690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &1459427180
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,9 +811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &1495013657
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,9 +932,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &1616759315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,9 +1053,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &1725272774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1068,8 @@ GameObject:
   - component: {fileID: 1725272776}
   - component: {fileID: 1725272775}
   - component: {fileID: 1725272778}
+  - component: {fileID: 1725272779}
+  - component: {fileID: 1725272780}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1172,6 +1174,32 @@ MonoBehaviour:
   _PostProcessShaderAccurate: {fileID: 4800000, guid: 2ebed186567d3c244a87538744a62920, type: 3}
   _PixelationShader: {fileID: 4800000, guid: f2da0e2a14a532548b5db043244b3df1, type: 3}
   _InterlacingShader: {fileID: 4800000, guid: 03ebd34214b41ef459d7ee6753b062be, type: 3}
+--- !u!114 &1725272779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725272774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd87133264b1a4a40a658aa380f37099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalSpeed: 1
+  verticalSpeed: 1
+--- !u!114 &1725272780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725272774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0faaaa0252b86c642b88f053d7a4655d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1890053576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,9 +1319,7 @@ GameObject:
   - component: {fileID: 1927699216}
   - component: {fileID: 1927699215}
   - component: {fileID: 1927699219}
-  - component: {fileID: 1927699221}
-  - component: {fileID: 1927699222}
-  - component: {fileID: 1927699223}
+  - component: {fileID: 1927699220}
   m_Layer: 0
   m_Name: Beach Ball (Player)
   m_TagString: Untagged
@@ -1414,33 +1440,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!143 &1927699221
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927699214}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 1.0000001
-  m_Radius: 0.50000006
-  m_SlopeLimit: 1
-  m_StepOffset: 1
-  m_SkinWidth: 0.0001
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1927699222
+--- !u!114 &1927699220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1449,28 +1449,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1927699214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9378289ff9be9764882176aee31a8eea, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f1dee5f506cd3b41a2c69b6871440cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  rb: {fileID: 0}
-  movementX: 0
-  movementY: 0
---- !u!114 &1927699223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927699214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5807a7333ea4290449e121eed2f2678b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementSpeed: 9
-  Gravity: 9.8
-  isFading: 0
 --- !u!1 &1954710722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,9 +1570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &2015655029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,9 +1796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1 &2074989695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,9 +2127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ba4b7f014499c42bbbcab86ac6533d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xAngle: 0.5
-  _yAngle: 0.5
-  _zAngle: 0.5
+  _xAngle: 2
+  _yAngle: 2
+  _zAngle: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
