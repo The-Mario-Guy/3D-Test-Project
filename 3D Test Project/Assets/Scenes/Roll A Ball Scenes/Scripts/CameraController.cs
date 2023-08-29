@@ -13,8 +13,8 @@ public class CameraController : MonoBehaviour
     public float horizontalSpeed = 1f;
     // vertical rotation speed
     public float verticalSpeed = 1f;
-    private float xRotation = 0.0f;
-    private float yRotation = 0.0f;
+  /*  private float xRotation = 0.0f;
+    private float yRotation = 0.0f; */
     private Camera cam;
     // Start is called before the first frame update
     void Start()
