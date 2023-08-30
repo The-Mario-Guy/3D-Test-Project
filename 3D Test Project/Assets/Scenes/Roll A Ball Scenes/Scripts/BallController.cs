@@ -8,12 +8,13 @@ public class BallController : MonoBehaviour
 {
     float horizontalInput;
     float verticalInput;
+    public float Gravity;
     private Rigidbody _playerRigidBody;
     public float forceMultiplier;
     public TextMeshProUGUI countText;
     public TextMeshProUGUI shadowCountText;
     public GameObject winTextObject;
-    public GameObject winTextObjectShadow;
+   // public GameObject winTextObjectShadow;
 
     private int count;
 
@@ -23,7 +24,7 @@ public class BallController : MonoBehaviour
         _playerRigidBody = GetComponent<Rigidbody>();
         count = 0;
         winTextObject.SetActive(false);
-        winTextObjectShadow.SetActive(false);
+        //winTextObjectShadow.SetActive(false);
 
        // SetCountText ();
     }
@@ -35,7 +36,7 @@ public class BallController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput);
+        Vector3 movement = new Vector3(horizontalInput, Gravity, verticalInput);
 
         _playerRigidBody.AddForce(movement * forceMultiplier);
 
@@ -51,7 +52,11 @@ public class BallController : MonoBehaviour
             SetShadowCountText();
 
         }
-        void SetCountText()
+        if (other.gameObject.CompareTag("Death"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+            void SetCountText()
         {
             countText.text = count.ToString();
 
@@ -59,24 +64,21 @@ public class BallController : MonoBehaviour
             {
                 // Set the text value of your 'winText'
                 winTextObject.SetActive(true);
-                StartCoroutine(Timer());
+                // StartCoroutine(Timer());
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
 
         }
         void SetShadowCountText()
         {
             shadowCountText.text = count.ToString();
-
-            if (count == 8)
-            {
-                winTextObjectShadow.SetActive(true);
-            }
         }
 
     }
-    IEnumerator Timer()
-    {
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(2);
-    }
+    /* IEnumerator Timer()
+     {
+         yield return new WaitForSeconds(3);
+         SceneManager.LoadScene(2);
+     } */
 }

@@ -20,8 +20,20 @@ public class Title : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void title()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void Quit()
     {
         Application.Quit();
+    }
+    public void levelTwo()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void levelThree()
+    {
+        SceneManager.LoadScene(3);
     }
 }

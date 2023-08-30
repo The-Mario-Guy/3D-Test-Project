@@ -1,0 +1,28 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Cardboard
+Ka 0.000000 0.000000 0.000000
+Kd 0.807843 0.643137 0.513725
+Ks 0.330000 0.330000 0.330000
+map_Kd e394a8f1-63e7-4407-b817-cddd9f2a389e/Cardboard.png
+
+newmtl Chipboard
+Ka 0.000000 0.000000 0.000000
+Kd 0.482353 0.325490 0.254902
+Ks 0.330000 0.330000 0.330000
+map_Kd e394a8f1-63e7-4407-b817-cddd9f2a389e/Chipboard.png
+
+newmtl _Cardboard_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.247059 0.192157 0.196078
+Ks 0.330000 0.330000 0.330000
+map_Kd e394a8f1-63e7-4407-b817-cddd9f2a389e/_Cardboard_1.png
+
+newmtl Plastic_Red
+Ka 0.000000 0.000000 0.000000
+Kd 0.207843 0.086275 0.054902
+Ks 0.330000 0.330000 0.330000
+map_Kd e394a8f1-63e7-4407-b817-cddd9f2a389e/Plastic_Red.png
+
