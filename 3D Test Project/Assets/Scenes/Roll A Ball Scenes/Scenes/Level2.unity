@@ -5185,7 +5185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1dee5f506cd3b41a2c69b6871440cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gravity: -1
+  Gravity: -1.5
   forceMultiplier: 100
   countText: {fileID: 829800824}
   shadowCountText: {fileID: 1288675050}

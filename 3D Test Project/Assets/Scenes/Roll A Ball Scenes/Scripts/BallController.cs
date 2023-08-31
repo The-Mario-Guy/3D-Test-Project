@@ -60,6 +60,7 @@ public class BallController : MonoBehaviour
         {
             countText.text = count.ToString();
 
+
             if (count == 8)
             {
                 // Set the text value of your 'winText'
