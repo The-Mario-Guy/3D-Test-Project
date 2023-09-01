@@ -61,7 +61,7 @@ public class BallController : MonoBehaviour
             countText.text = count.ToString();
 
 
-            if (count == 8)
+            if (count == 10)
             {
                 // Set the text value of your 'winText'
                 winTextObject.SetActive(true);

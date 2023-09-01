@@ -18,7 +18,7 @@ public class Title : MonoBehaviour
     }
     public void loadMain()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
     public void title()
     {
