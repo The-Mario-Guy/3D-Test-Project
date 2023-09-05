@@ -45,6 +45,10 @@ public class BallController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene(0);
+        }
 
     }
     private void OnTriggerEnter(Collider other)
