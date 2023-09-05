@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class BallController : MonoBehaviour
 {
@@ -39,6 +40,11 @@ public class BallController : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, Gravity, verticalInput);
 
         _playerRigidBody.AddForce(movement * forceMultiplier);
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
     }
     private void OnTriggerEnter(Collider other)
@@ -77,9 +83,5 @@ public class BallController : MonoBehaviour
         }
 
     }
-    /* IEnumerator Timer()
-     {
-         yield return new WaitForSeconds(3);
-         SceneManager.LoadScene(2);
-     } */
+   
 }
