@@ -47,6 +47,8 @@ public class BallController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene(0);
         }
 
