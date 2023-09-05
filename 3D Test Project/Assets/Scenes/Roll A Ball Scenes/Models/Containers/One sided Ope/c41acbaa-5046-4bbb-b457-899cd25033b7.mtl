@@ -1,0 +1,22 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Katherine_Glasses1
+Ka 0.000000 0.000000 0.000000
+Kd 0.584314 0.486275 0.407843
+Ks 0.330000 0.330000 0.330000
+map_Kd c41acbaa-5046-4bbb-b457-899cd25033b7/Katherine_Glasses1.png
+
+newmtl Katherine_Sleeve
+Ka 0.000000 0.000000 0.000000
+Kd 0.556863 0.501961 0.486275
+Ks 0.330000 0.330000 0.330000
+map_Kd c41acbaa-5046-4bbb-b457-899cd25033b7/Katherine_Sleeve.png
+
+newmtl Front_Darker
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.152941 0.137255
+Ks 0.330000 0.330000 0.330000
+map_Kd c41acbaa-5046-4bbb-b457-899cd25033b7/Front_Darker.png
+
