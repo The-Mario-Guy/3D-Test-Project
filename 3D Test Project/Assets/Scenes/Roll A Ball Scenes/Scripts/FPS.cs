@@ -5,9 +5,10 @@ using UnityEngine;
 public class FPS : MonoBehaviour
 {
     // Start is called before the first frame update
+
     void Start()
     {
-        Application.targetFrameRate = 30;
+        Application.targetFrameRate = 25;
     }
 
     // Update is called once per frame
