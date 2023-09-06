@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a4c69f7a9d3ea43907b5765229dc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _TextureWarpingFactor: 0
+  _TextureWarpingFactor: 0.068
   _TextureWarpingMode: 1
   _VertexGridResolution: 0.3
   _VertexWobbleMode: 0
